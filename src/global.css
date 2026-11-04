@@ -1,0 +1,45 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@source "./app/**/*.{tsx,jsx,ts,js}";
+@source "./components/**/*.{tsx,jsx,ts,js}";
+
+@theme {
+  /* Warna */
+  --color-primary: #c0bcdf;
+  --color-secondary: #544f69;
+  --color-light: #f1f2f4;
+  --color-nero: #252526;
+  --color-accent: #8776ea;
+  --color-second-accent: #a6a3a1;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-screen: 20px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-card: 16px;
+
+  /* Ukuran teks */
+  --text-caption: 12px;
+  --text-body: 16px;
+  --text-subtitle: 20px;
+  --text-title: 28px;
+  --text-heading: 36px;
+}
+
+@layer components {
+  .button {
+    @apply mt-3 rounded-sm bg-secondary px-2 py-3 text-light;
+  }
+}
