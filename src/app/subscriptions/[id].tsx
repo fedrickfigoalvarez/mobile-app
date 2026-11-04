@@ -5,7 +5,7 @@ const SubscriptionDetails = () => {
   const { id } = useLocalSearchParams<{ id: string }>();
 
   return (
-    <View className="flex-1 items-center justify-center bg-primary">
+    <View className="flex-1 items-center justify-center bg-background">
       <Text>SubscriptionsDetails: {id}</Text>
       <Link className="button" href={"/"}>
         Go Back
