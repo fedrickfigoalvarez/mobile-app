@@ -28,6 +28,8 @@ export default function Index() {
         SignUp
       </Link>
 
+      <Link href="/subscriptions/Spotify">Spotify Subs</Link>
+
       <Link
         className="px-3 py-2 bg-primary text-white rounded-md"
         href={{
